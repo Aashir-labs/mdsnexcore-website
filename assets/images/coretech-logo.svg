@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" fill="none">
+  <rect x="2" y="5" width="40" height="40" rx="10" fill="#1E293B"/>
+  <!-- Code / Circuit icon -->
+  <path d="M15 20 L10 25 L15 30 M29 20 L34 25 L29 30 M24 18 L20 32" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#0F172A">CORETECH</text>
+  <text x="135" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" fill="#64748B">DIGITAL</text>
+  <text x="53" y="39" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="8" fill="#94A3B8" letter-spacing="1">FIELD SERVICE PLATFORMS</text>
+</svg>
