@@ -18,13 +18,13 @@
   </g>
 
   <!-- Typography: MDS NEXCORE -->
-  <text x="64" y="33" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="23" letter-spacing="0.5" fill="#0F172A">
-    MDS<tspan fill="#2563EB">NEXCORE</tspan>
+  <text x="64" y="33" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" letter-spacing="0.5" fill="#0F172A">
+    MDS <tspan fill="#2563EB">NEXCORE</tspan>
   </text>
   
   <!-- Sub-label -->
   <text x="65" y="47" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="7.5" letter-spacing="2" fill="#64748B">
-    DIGITAL &amp; LEAD GENERATION
+    CORPORATE PROFILE &bull; DIGITAL SOLUTIONS
   </text>
-  <line x1="205" y1="45" x2="255" y2="45" stroke="#CBD5E1" stroke-width="1"/>
+  <line x1="218" y1="45" x2="260" y2="45" stroke="#CBD5E1" stroke-width="1"/>
 </svg>

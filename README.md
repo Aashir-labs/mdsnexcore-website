@@ -1,41 +1,46 @@
-# MDSNEXCORE — Digital Marketing & Lead Generation
+# MDS NEXCORE — Official Corporate Profile & Business Presence
 
-A clean, modern, and simple one-page website for **MDSNEXCORE**.
-
----
-
-## 📋 Overview & Details
-
-- **Company:** MDSNEXCORE
-- **Core Services:**
-  1. **Digital Marketing** (Meta & Google Ads, Social Media Strategy, Performance Marketing)
-  2. **Lead Generation** (Targeted Customer Acquisition, Inbound Funnels, Sales Pipeline Growth)
-- **Direct Contact Person:** Nabeel
-- **Phone / WhatsApp:** +92 301 234567
-- **Email:** Mdsnexcore@gmail.com
+Official corporate presence and business profile of **MDS NEXCORE** (Munab Digital Solutions) for statutory, regulatory, and corporate verification purposes in Pakistan, including Federal Board of Revenue (FBR) submission and institutional compliance.
 
 ---
 
-## 🚀 Key Features
+## 📋 Entity & Contact Information
 
-1. **One-Page Layout:** Clean, uncluttered, focused strictly on Digital Marketing, Lead Generation, and direct contact.
-2. **Direct Contact Options:**
-   - One-click phone calling (`tel:+92301234567`)
-   - Direct WhatsApp chat link (`https://wa.me/92301234567`)
-   - One-click email (`mailto:Mdsnexcore@gmail.com`)
-   - One-click copy buttons for phone number & email with toast feedback
-3. **Clean Contact Form:** Fast client-side validated form allowing prospects to select between Digital Marketing, Lead Generation, or both.
-4. **Responsive & Fast:** Optimized for mobile phones, tablets, and desktop screens with Navy Blue, Slate, and Cyan accents.
+- **Entity Trade Name:** MDS NEXCORE
+- **Affiliated Title:** Munab Digital Solutions (MDS)
+- **Principal Business Scope:** Digital Marketing Services, Lead Generation Architecture, and Information Technology Enablement
+- **Official Contact Lines:**
+  - **Primary:** `03019356631`
+  - **Secondary:** `03131083470`
+- **Official Registered Email:** `munabdigitalsolutionmdsofficia@gmail.com`
+- **Regulatory Jurisdiction:** Federal Board of Revenue (FBR) / Pakistan
 
 ---
 
-## 💻 How to View
+## 🏛️ Website Architecture
+
+1. **Top Compliance Strip:** Direct display of entity name, FBR compliance indicator, both telephone lines, and the official email address.
+2. **Corporate Overview (Hero):** Professional introduction establishing the entity's commercial presence and scope in Pakistan.
+3. **Statutory Entity Record:** Clean, authoritative business information table (Entity Name, Business Sector, FBR Tax Jurisdiction, Contact Lines, Registered Email, Country of Establishment).
+4. **Registered Scope of Activities:** Structured breakdown of operational areas (Digital Marketing & Strategy, Lead Generation Architecture, and Technology Solutions).
+5. **Regulatory Compliance & Standards:** Transparent governance charter highlighting fiscal transparency, commercial integrity, and verification access.
+6. **Official Communication Desk:** Formal inquiry desk generating unique reference identifiers (e.g., `MDS-FBR-XXXXX`) for regulatory, tax, banking, or business inquiries.
+7. **Comprehensive 4-Column Footer:**
+   - **Column 1:** Corporate Profile & Identification (MDS NEXCORE, Munab Digital Solutions, FBR compliance notice)
+   - **Column 2:** Scope of Registered Business Operations
+   - **Column 3:** Statutory & Regulatory Links (FBR Submission Data, Tax Compliance, KYC Records)
+   - **Column 4:** Official Contacts (Both phone numbers, registered email, business operating hours, jurisdiction)
+   - **Bottom Legal Bar:** Formal regulatory notice, corporate disclosure, copyright © 2026 MDS NEXCORE.
+
+---
+
+## 🚀 How to Run & Preview
 
 ### Option 1: Direct File Open
-Double-click `index.html` in your browser.
+Open `index.html` in Google Chrome, Microsoft Edge, Firefox, or Safari.
 
 ### Option 2: Run with Python Server
 ```bash
 python server.py
 ```
-Visit `http://localhost:8080`.
+Open `http://localhost:8080` in your web browser.

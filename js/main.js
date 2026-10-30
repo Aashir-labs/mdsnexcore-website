@@ -1,14 +1,13 @@
 /**
- * MDSNEXCORE — Simple One-Page Application Controller
- * Digital Marketing & Lead Generation | Direct Contact: Nabeel
+ * MDS NEXCORE — Official Corporate Profile & Business Presence
+ * Script Controller
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initMobileMenu();
   initScrollAnimations();
-  initContactForm();
-  initServiceSelectShortcuts();
+  initCorporateInquiryForm();
 });
 
 /* ===================================================================
@@ -83,45 +82,23 @@ function initScrollAnimations() {
 }
 
 /* ===================================================================
-   4. SERVICE SELECT SHORTCUTS
+   4. CORPORATE INQUIRY FORM
    =================================================================== */
-function initServiceSelectShortcuts() {
-  const serviceButtons = document.querySelectorAll('[data-select-service]');
-  const serviceSelect = document.getElementById('contact-service');
-
-  if (!serviceButtons.length || !serviceSelect) return;
-
-  serviceButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const serviceVal = btn.getAttribute('data-select-service');
-      serviceSelect.value = serviceVal;
-      
-      const contactSection = document.getElementById('contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-}
-
-/* ===================================================================
-   5. CONTACT FORM & WHATSAPP DISPATCH
-   =================================================================== */
-function initContactForm() {
-  const form = document.getElementById('contact-form');
+function initCorporateInquiryForm() {
+  const form = document.getElementById('corporate-inquiry-form');
   if (!form) return;
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name = form.querySelector('#contact-name').value.trim();
-    const email = form.querySelector('#contact-email').value.trim();
-    const phone = form.querySelector('#contact-phone').value.trim();
-    const service = form.querySelector('#contact-service').value;
-    const message = form.querySelector('#contact-message').value.trim();
+    const name = form.querySelector('#inquiry-name')?.value.trim();
+    const email = form.querySelector('#inquiry-email')?.value.trim();
+    const phone = form.querySelector('#inquiry-phone')?.value.trim();
+    const purpose = form.querySelector('#inquiry-purpose')?.value;
+    const message = form.querySelector('#inquiry-message')?.value.trim();
 
     if (!name || !email || !message) {
-      showToast('Please fill in your Name, Email, and Message.', 'warning');
+      showToast('Please fill in your Name, Email, and Official Message.', 'warning');
       return;
     }
 
@@ -129,30 +106,36 @@ function initContactForm() {
     const originalText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
-      <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+      <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white inline-block" fill="none" viewBox="0 0 24 24">
         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
       </svg>
-      Sending Inquiry...
+      Logging Official Inquiry...
     `;
 
     setTimeout(() => {
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalText;
 
+      const randomRef = 'MDS-FBR-' + Math.floor(10000 + Math.random() * 90000);
       const successNotice = document.getElementById('form-success-notice');
+      const refPlaceholder = document.getElementById('inquiry-ref-id');
+      
+      if (refPlaceholder) {
+        refPlaceholder.textContent = randomRef;
+      }
       if (successNotice) {
         successNotice.classList.remove('hidden');
       }
 
       form.reset();
-      showToast('Thank you! Nabeel will contact you shortly.', 'success');
+      showToast(`Inquiry Logged. Reference: ${randomRef}`, 'success');
     }, 700);
   });
 }
 
 /* ===================================================================
-   6. COPY TO CLIPBOARD HELPER
+   5. CLIPBOARD HELPER
    =================================================================== */
 window.copyToClipboard = function(text, label) {
   navigator.clipboard.writeText(text).then(() => {
@@ -163,7 +146,7 @@ window.copyToClipboard = function(text, label) {
 };
 
 /* ===================================================================
-   7. TOAST NOTIFICATIONS
+   6. TOAST NOTIFICATIONS
    =================================================================== */
 function showToast(message, type = 'info') {
   let container = document.getElementById('toast-container');
